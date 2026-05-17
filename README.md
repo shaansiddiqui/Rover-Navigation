@@ -1,4 +1,4 @@
-# 🤖 Falco Rover — Autonomous Indoor Navigation System
+# 🤖 Falco Rover | GPS-Denied Autonomous Navigation using ROS2, SLAM & Depth Camera Fusion
 
 > GPS-denied autonomous navigation using ROS2 Humble, Gazebo, Nav2, SLAM, EKF, and multi-sensor fusion.
 
@@ -270,7 +270,7 @@ Custom ROS2 node — RViz LED marker (GREEN/YELLOW/RED) based on nav status.
 
 ## 📹 Demo Video
 
-[Watch simulation video](YOUR_VIDEO_LINK)
+[Watch simulation video](https://youtu.be/H4JcajxRSFE)
 
 ---
 
