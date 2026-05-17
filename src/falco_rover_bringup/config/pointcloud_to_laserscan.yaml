@@ -1,0 +1,28 @@
+pointcloud_to_laserscan_node:
+  ros__parameters:
+    # Input pointcloud topic
+    target_frame: base_link
+    transform_tolerance: 0.01
+
+    # Height range to slice — captures obstacles at ground level up to ~50cm
+    # Adjust min_height/max_height based on your camera mounting height
+    min_height: 0.0
+    max_height: 0.5
+
+    # Output scan angle range (full front-facing arc)
+    angle_min: -1.5708   # -90 degrees
+    angle_max:  1.5708   #  90 degrees
+    angle_increment: 0.0087  # ~0.5 degree resolution
+
+    # Range limits matching RealSense D435 specs
+    range_min: 0.1
+    range_max: 10.0
+
+    # Scan time matching your LiDAR Hz
+    scan_time: 0.2
+
+    use_inf: true
+    inf_epsilon: 1.0
+
+    # Concurrency — 1 is safe for simulation
+    concurrency_level: 1
